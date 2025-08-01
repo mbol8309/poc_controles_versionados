@@ -1,14 +1,14 @@
 const path = require('path');
 
 module.exports = (env = {}) => {
-  const version = env.version || 'v1';
+  const version = env.version || 'v1.0';
 
   return {
     mode: 'production',
-    entry: './src/index.jsx',
+    entry: './components/src/index.jsx',
     output: {
-      path: path.resolve(__dirname, 'versions'),
-      filename: `public/controles.${version}.js`,
+      path: path.resolve(__dirname, '../public'),
+      filename: `../public/versions/controles.${version}.js`,
     },
     resolve: {
       extensions: ['.js', '.jsx'],
