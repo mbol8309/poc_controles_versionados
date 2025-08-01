@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+
+# Build output (ajústalo según tu estructura)
+dist/
+build/
+public/versions/
+*.bundle.js
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Entornos virtuales o dependencias locales
+.env
+.env.local
+.env.*.local
+
+# Archivos temporales
+*.tmp
+*.swp
+*.bak
+*.log
+
+# Archivos del sistema de Live Server (si los genera)
+.liveserver.json
