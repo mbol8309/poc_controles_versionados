@@ -4,7 +4,7 @@ node_modules/
 # Build output (ajústalo según tu estructura)
 dist/
 build/
-public/versions/
+public/-versions
 *.bundle.js
 
 # Logs
