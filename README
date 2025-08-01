@@ -1,0 +1,6 @@
+# Prueba Conceptual: Controles Versionados
+
+Este proyecto es una prueba conceptual para manejar distintas versiones de controles en páginas web. Cada vez que se descarga un script de una nueva versión, el componente se registra automáticamente en `window.Component[version]`. Usando variables de contexto de React, los componentes pueden ser pasados a un componente principal que, a partir de un JSON, renderiza los controles. Si algún control no existe, se muestra un skeleton como fallback.
+Por ejemplo en esta imagen se ve que se pueden tener en el navegador todas las funciones independientes por versiones, que se van cargando segun sea necesario. Despues con una herramienta de cargar paginas segun la version que use la pagina genera los componentes con los controles de la version especifica.
+
+![](image-1.png)
