@@ -1,9 +1,11 @@
 import { Checkbox } from './checkbox';
 import { TextBox } from './textbox';
+import { Number } from './number';
 
 const Components = {
-  Checkbox,
-  TextBox,
+    Checkbox,
+    TextBox,
+    Number
 };
 
 // Este archivo define la exportación global que se insertará en window.Components
