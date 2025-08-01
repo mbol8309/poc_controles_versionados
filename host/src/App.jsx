@@ -1,10 +1,16 @@
 import React, { useState } from "react";
+import Loader from "./Loader";
+import { ComponentLoaderProvider } from "./context/ComponentLoaderContext";
+import Pages from "./Pages";
 
 function App() {
     
     return (
         <div>
-            <p>prueba</p>
+            <ComponentLoaderProvider>
+                <Loader />
+                <Pages />
+                </ComponentLoaderProvider>
         </div>
     );
 }

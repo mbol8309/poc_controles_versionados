@@ -1,0 +1,18 @@
+{
+    "controles_version": "v1.2",
+    "vista":{
+        "campos": [
+            {
+                "id": "campo1",
+                "tipo": "texto",
+                "label": "Campo de texto 1"
+            },
+            {
+                "id": "campo2",
+                "tipo": "numero",
+                "label": "Campo numérico 2"
+            }
+        ],
+        "titulo": "Vista 1"
+    }
+}

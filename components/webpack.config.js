@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = (env = {}) => {
   const version = env.version || 'v1.0';
@@ -7,8 +8,8 @@ module.exports = (env = {}) => {
     mode: 'production',
     entry: './components/src/index.jsx',
     output: {
-      path: path.resolve(__dirname, '../public'),
-      filename: `../public/versions/controles.${version}.js`,
+      path: path.resolve(__dirname, '../public/versions'),
+      filename: `controles.${version}.js`,
     },
     resolve: {
       extensions: ['.js', '.jsx'],
@@ -22,6 +23,10 @@ module.exports = (env = {}) => {
         },
       ],
     },
-    plugins: [],
+      plugins: [
+        new webpack.DefinePlugin({
+        'process.env.VERSION': JSON.stringify(version),
+      }),
+    ],
   };
 };
