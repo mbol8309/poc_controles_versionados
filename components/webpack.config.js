@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = (env = {}) => {
-  const version = env.version || 'v1.0';
+  const version = env.vers || 'v1.0';
 
   return {
     mode: 'production',
