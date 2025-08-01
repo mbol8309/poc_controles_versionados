@@ -3,7 +3,8 @@ const webpack = require('webpack');
 
 module.exports = (env = {}) => {
   const version = env.vers || 'v1.0';
-
+    
+    
   return {
     mode: 'production',
     entry: './components/src/index.jsx',
